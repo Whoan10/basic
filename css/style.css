@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --vermelho:#F2545B;
+  --branco:#F4EBD9;
+  --azul-escuro:#3D405B;
+  --verde-claro:#7CC6FE;
+  --verde-escuro:#23C9FF;
+}
+
+body{
+  background-image :linear-gradient(180deg, rgb(255, 255, 255) , rgb(212, 212, 212) );
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav{
+  background-color: var(--azul-escuro);
+  padding: 10px 20px;
+}
+
+nav a{
+  color: white;
+  font-size: 1.3em;
+  padding: 10px 20px;
+}
+
+nav a:hover{
+  text-decoration: underline;
+  background-color: var(--vermelho);
+  border-radius: 5px;
+  color: var(--azul-escuro);
+  transition: 0.25s;
+}
+
+header{
+  background-color:var(--azul-escuro);
+  text-align: center;
+}
+
+header h1{
+  color: white;
+  font-size: max(5em, 5vw);
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+header p{
+  color: white;
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+
+main{
+  max-width:1400px;
+  min-width: 320px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0px 0px 10px 10px;
+}
+
+main h1, h2, h3{
+  padding: 10px 0;
+}
+
+main h1{
+  color:var(--vermelho);
+  font-size: 3em;
+}
+
+main h2{
+  color: #F2545B;
+  padding-left:25px ;
+}
+
+main p{
+  text-align: justify;
+  line-height: 1.7em;
+  text-indent: 25px;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0 5px;
+}
+
+aside{
+  background-color: var(--branco);
+  border-radius: 10px 10px 5px 10px;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+aside h3{
+  background-color: #e0d7c4;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  font-size: 1.3em;
+  color: var(--azul-escuro);
+}
+
+aside ul{
+  list-style-position: inside;
+  padding: 20px;
+  columns: 2;
+}
+
+footer{
+  background-color: var(--azul-escuro);
+  color: white;
+  min-height:80px ;
+  padding: 20px;
+  margin: 0 -20px -20px -20px;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+footer a{
+  color: white;
+  padding-top: 10px;
+  font-size: 1.1em;
+}
+
+footer p{
+  padding-top: 20px;
+  font-size: 1.2em;
+  text-align: center;
+  text-indent: 0px;
+}
+

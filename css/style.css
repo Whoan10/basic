@@ -12,8 +12,8 @@
   --h2:#ee7177;
   --branco:#F4EBD9;
   --azul-escuro:#3D405B;
-  --verde-claro:#7CC6FE;
-  --verde-escuro:#23C9FF;
+  --cinza-claro:rgb(200, 200, 200);
+  --cinza-escuro:rgb(163, 163, 163);
 }
 
 body{
@@ -119,7 +119,7 @@ main p{
 }
 
 aside{
-  background-color: var(--branco);
+  background-color: var(--cinza-claro);
   border-radius: 10px 10px 5px 10px;
   width: 300px;
   margin: auto;
@@ -130,13 +130,14 @@ aside{
 }
 
 aside h3{
-  background-color: #e0d7c4;
+  background-color: var(--cinza-escuro);
   padding: 15px;
   border-radius: 10px 10px 0 0;
   font-size: 1.3em;
-  color: var(--azul-escuro);
+  color: white;
   border-bottom: 1px solid var(--azul-escuro);
   text-align: center;
+  text-shadow: 1px 1px 1px black;
 }
 
 aside ul{

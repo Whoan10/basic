@@ -55,7 +55,7 @@ nav a:hover{
   background-color: var(--vermelho);
   border-radius: 5px;
   color: var(--azul-escuro);
-  transition: 0.25s;
+  transition: 0.3s;
 }
 
 h1, h2, h3{
@@ -129,8 +129,7 @@ aside{
   margin: auto;
   margin-bottom: 40px;
   margin-top: 20px;
-  border: 1px solid var(--azul-escuro);
-
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 aside h3{
@@ -139,7 +138,7 @@ aside h3{
   border-radius: 10px 10px 0 0;
   font-size: 1.3em;
   color: white;
-  border-bottom: 1px solid var(--azul-escuro);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   text-align: center;
   text-shadow: 1px 1px 1px black;
 }
@@ -151,7 +150,8 @@ aside ul{
 }
 
 aside a{
-  color:var(--azul-escuro);
+  color: rgba(0, 0, 0, 0.8);
+
 }
 
 aside a:hover{

@@ -8,20 +8,29 @@
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <title>Whoan</title>
 </head>
+
 <body>
+
   <nav>
-    <a href="index.html">Home</a>
-    <a href="login.html">Login</a>
-    <a href="#">Registrar</a>
-    <a href="#">Sair</a>
-    <span id = "modo" onclick="noturno()">Noturno</span>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="#">Registrar</a></li>
+    <li><a href="#">Sair</a></li>
+    
+    <div id = "dark-mode"><div id = "ball"></div></div>
+    <li><input type="checkbox" name="dark-mode" id="dark-mode"><label for="dark-mode">Modo Noturno</label></li>
+
+  </ul> 
   </nav>
+
   <header>
     <h1>Site</h1>
     <p>Site de exemplo</p>
   </header>
 
   <main>
+
     <h1>EXEMPLO</h1>
 
     <section>
@@ -36,6 +45,7 @@
 
 
     </section>
+
     <section>
       <h2>Título</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, exercitationem libero? Magnam similique ipsum beatae in cum, soluta, cupiditate explicabo impedit architecto debitis voluptatibus quia, vero omnis? Facere, optio nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, porro quibusdam nisi, delectus aliquam error facere corporis dolor temporibus unde fugit possimus saepe placeat labore illum explicabo ea esse quo.</p>
@@ -53,29 +63,15 @@
             <li><a href="">exemplo</a></li>
           </ul>
       </aside>
+
     </section>
+
     <footer>
           <p>&copy;Juan</p>
-          <a href="https://github.com/Whoan10">Github</a> | <a href="https://twitter.com/JuanVitrioDutr2">Twitter</a>
+          <a href="">Github</a> | <a href="">Twitter</a>
     </footer>
+    
   </main>
-
-<script>
-  function noturno(){
-  var nome = window.document.getElementById('modo')
-  var fundo = window.document.getElementsByTagName('main')[0]
-  var letras = window.document.getElementsByTagName('p')[0]  
-
-  
-  fundo.style.background = '#404042'
-  nome.innerHTML = 'Claro'
-
-  }
-  function claro(){
-    var nome = window.document.getElementById('modo')
-  nome.innerHTML = 'Noturno'
-  }
-</script>
 
 </body>
 </html>

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -14,6 +15,8 @@
   --azul-escuro:#3D405B;
   --cinza-claro:rgb(200, 200, 200);
   --cinza-escuro:rgb(163, 163, 163);
+
+  /*Modo noturno até então: #1C1C1F, #302E36, #302B33, #2E3036, #2B2F33*/
 }
 
 body{
@@ -25,6 +28,13 @@ body{
 a{
   text-decoration: none;
 }
+
+h1, h2, h3{
+  font-family: 'Roboto', sans-serif;
+  cursor: default;
+}
+
+/*formatando o nav do header*/
 
 nav{
   background-color: var(--azul-escuro);
@@ -38,25 +48,19 @@ nav span#modo{
   cursor: pointer;
 }
 
-nav span#modo:hover{
-  text-decoration: underline;
-  background-color: var(--vermelho);
-  border-radius: 5px;
-  color: var(--azul-escuro);
-  transition: 0.3s;
+nav ul{
+  list-style: none;
+  display: flex;
 }
 
-img{
-  width: 100%;
+nav input[type=checkbox]{
+  display: none;
 }
 
-img.sla{
-  display:block;
-  margin: auto;
-  border: 1px solid black;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  max-width: 700px;
+nav label{
+  color: white;
+  font-size: 1.3em;
+  padding: 10px 10px;
 }
 
 nav a{
@@ -73,10 +77,7 @@ nav a:hover{
   transition: 0.3s;
 }
 
-h1, h2, h3{
-  font-family: 'Roboto', sans-serif;
-  cursor: default;
-}
+/*formatando o header*/
 
 header{
   background-color:var(--azul-escuro);
@@ -96,6 +97,9 @@ header p{
   padding-bottom: 20px;
   cursor: default;
 }
+
+/*Formatando o main*/
+
 
 main{
   max-width:1400px;
@@ -137,6 +141,23 @@ main p{
   font-family: 'Poppins', sans-serif;
 }
 
+/*Formatando img*/
+
+img{
+  width: 100%;
+}
+
+img.sla{
+  display:block;
+  margin: auto;
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 700px;
+}
+
+/*Formatando o aside*/
+
 aside{
   background-color: var(--cinza-claro);
   border-radius: 10px 10px 5px 10px;
@@ -174,6 +195,8 @@ aside a:hover{
   color: #5d618a;
 }
 
+/*Formatando o footer*/
+
 footer{
   background-color: var(--azul-escuro);
   color: white;
@@ -199,5 +222,30 @@ footer p{
   font-size: 1.2em;
   text-align: center;
   text-indent: 0px;
+}
+
+/*Sem destino ainda*/
+
+div#dark-mode{
+  width: 50px;
+  background-color: white;
+  border-radius: 20px;
+  margin-right: -5px;
+  cursor: pointer;
+}
+
+div#dark-mode div#ball{
+  width: 20px;
+  height: 20px;
+  background-color: rgb(209, 209, 209);
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.3s;
+}
+
+input:checked + label{
+  left: 28px;
 }
 

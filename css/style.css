@@ -54,7 +54,7 @@ nav ul{
 }
 
 nav input[type=checkbox]{
-  display: none;
+
 }
 
 nav label{
@@ -226,26 +226,26 @@ footer p{
 
 /*Sem destino ainda*/
 
-div#dark-mode{
+nav label{
   width: 50px;
+  height: 22px;
   background-color: white;
   border-radius: 20px;
   margin-right: -5px;
   cursor: pointer;
+  margin-top: 1px;
 }
 
-div#dark-mode div#ball{
+.bola{
   width: 20px;
   height: 20px;
-  background-color: rgb(209, 209, 209);
-  top: 2px;
-  left: 2px;
+  background-color: #2f2f2f;
+  top: 12px;
   border-radius: 50%;
-  position: relative;
-  transition: 0.3s;
+  margin-left: -8px;
+  position: absolute;
 }
 
-input:checked + label{
-  left: 28px;
+input:checked ~ .bola {
+  left: 20px;
 }
-

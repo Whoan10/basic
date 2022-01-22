@@ -31,6 +31,21 @@ nav{
   padding: 10px 20px;
 }
 
+nav span#modo{
+  color: white;
+  font-size: 1.3em;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+nav span#modo:hover{
+  text-decoration: underline;
+  background-color: var(--vermelho);
+  border-radius: 5px;
+  color: var(--azul-escuro);
+  transition: 0.3s;
+}
+
 img{
   width: 100%;
 }

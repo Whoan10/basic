@@ -241,7 +241,7 @@ nav label{
 .bola{
   width: 20px;
   height: 20px;
-  background-color: #2f2f2f;
+  background-color: var(--azul-escuro);
   top: 12px;
   border-radius: 50%;
   margin-left: -8px;

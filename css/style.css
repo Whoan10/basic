@@ -54,7 +54,7 @@ nav ul{
 }
 
 nav input[type=checkbox]{
-
+  display: none;
 }
 
 nav label{
@@ -121,6 +121,7 @@ main h1{
   font-size:3.5em;
   text-align: center;
   background-color: #3d405b0a;
+  margin-top: 40px;
 }
 
 main h2{
@@ -244,8 +245,33 @@ nav label{
   border-radius: 50%;
   margin-left: -8px;
   position: absolute;
+  transition: .3s;
 }
 
 input:checked ~ .bola {
-  left: 20px;
+  transform: translateX(26px);
 }
+
+#dia{
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: bold;
+  color: var(--h2);
+  text-shadow: 1px 1px 1px var(--azul-escuro);
+}
+
+#horario{
+  font-size: 1.5em;
+  color: #2f2f2f;
+  margin-left: -20px;
+  margin-bottom: 40px;
+}
+
+#hora, #minuto{
+  color: var(--vermelho);
+}
+
+@media only screen and (max-width: 600px){
+
+}
+

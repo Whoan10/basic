@@ -46,11 +46,9 @@ switch(diaHora){
   }else{
     day.innerHTML = 'Boa noite'
   }
-
   atual.innerHTML = semana
   hour.innerHTML = hora
   minute.innerHTML = minuto
-
 
   
 

@@ -50,7 +50,7 @@ switch(diaHora){
   hour.innerHTML = hora
   minute.innerHTML = minuto
 
-  
+
 
 
  

@@ -9,6 +9,12 @@ var minute = document.getElementById('minuto')
 var hour = document.getElementById('hora')
 var semana = 'dia'
 
+var menu = document.querySelector('.menu')
+
+function ativar(){
+  
+}
+
 switch(diaHora){
   case 0:
     semana = 'domingo'
@@ -49,7 +55,6 @@ switch(diaHora){
   atual.innerHTML = semana
   hour.innerHTML = hora
   minute.innerHTML = minuto
-
 
 
 

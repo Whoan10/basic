@@ -272,6 +272,18 @@ input:checked ~ .bola {
   color: var(--vermelho);
 }
 
+.menu{
+  font-size: 1.3em;
+}
+
+#menuu{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  z-index: 1000;
+}
+
 @media (max-width: 670px){
   nav{
     display: flex;
